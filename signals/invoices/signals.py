@@ -6,7 +6,7 @@ from orders.models import Order
 
 
 @receiver(post_save, sender=Order)
-def send_order_notification(sender, instance, created, **kwargs):
+def send_order_invoice(sender, instance, created, **kwargs):
     """
     Ugly signal receiver that works silently and is hard to discover or debug
     when issue occurs.

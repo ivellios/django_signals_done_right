@@ -1,7 +1,6 @@
 from django.db import models
 
-from .consts import ORDER_CREATED, ORDER_PROCESSED, ORDER_DISPATCHED, ORDER_FULFILLED
-
+from .consts import ORDER_CREATED, ORDER_PROCESSED, ORDER_DISPATCHED
 # Create your models here.
 from .signals import order_is_processed, order_sent
 
